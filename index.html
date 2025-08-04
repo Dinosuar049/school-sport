@@ -1,27 +1,40 @@
-<?php
-    include("head.php");
-    include("banner_nav.php");
-?>
-    <div class="main common">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Shoe Store</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
 
-        <h2> Welcome</h2>
-        
-        <p>
-        Welcome to the World of School Sports, organized physical activity played by students within a high school setting, 
-        designed to promote teamwork, skill development, and school spirit. 
-</p>
+  <main class="product-grid">
+    <div class="product">
+      <img src="assets/shoes/shoe1.jpg" alt="Running Shoe">
+      <h2>Running Shoe</h2>
+      <p>$59.99</p>
+      <button onclick="addToCart('Running Shoe', 59.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/shoes/shoe2.jpg" alt="Casual Sneaker">
+      <h2>Casual Sneaker</h2>
+      <p>$49.99</p>
+      <button onclick="addToCart('Casual Sneaker', 49.99)">Add to Cart</button>
+    </div>
+    <!-- Add more products as needed -->
+  </main>
 
-<p>
-These sports offer students the opportunity to engage in competitive and recreational activities that 
-        not only enhance their physical fitness but also build lasting friendships and a sense of community.
-        Don't know where to start? Try the random school sports to get started. 
-</p>
+  <footer>
+    <p>&copy; 2025 Shoe Store. All rights reserved.</p>
+  </footer>
 
-
-
-</div> <!-- / main -->
-
-<?php
-include("footer.php")
-
-?>
+  <script src="cart.js"></script>
+</body>
+</html>
