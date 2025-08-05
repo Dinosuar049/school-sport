@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shoe Store</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Snackiverse 🍙</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Shoe Store</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="cart.html">Cart</a>
-    </nav>
-  </header>
 
-  <main class="product-grid">
-    <div class="product">
-      <img src="assets/shoes/shoe1.jpg" alt="Running Shoe">
-      <h2>Running Shoe</h2>
-      <p>$59.99</p>
-      <button onclick="addToCart('Running Shoe', 59.99)">Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="assets/shoes/shoe2.jpg" alt="Casual Sneaker">
-      <h2>Casual Sneaker</h2>
-      <p>$49.99</p>
-      <button onclick="addToCart('Casual Sneaker', 49.99)">Add to Cart</button>
-    </div>
-    <!-- Add more products as needed -->
-  </main>
+    <header>
+        <h1>🍡 Snackiverse: International Tastes with an Anime Twist 🍜</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 Shoe Store. All rights reserved.</p>
-  </footer>
+    <main>
+        <section id="intro">
+            <h2>Welcome to Snackiverse!</h2>
+            <p>Explore snacks from around the world with a dash of anime magic.</p>
+            <img src="images/snackiverse-banner.png" alt="Anime-style snack banner" width="100%">
+        </section>
 
-  <script src="cart.js"></script>
+        <section id="featured">
+            <h2>🌟 Featured Snacks</h2>
+            <div class="snack-card">
+                <img src="images/mochi.png" alt="Mochi">
+                <h3>Mochi (Japan)</h3>
+                <p>Sweet, chewy, and perfect for any sakura picnic 🌸</p>
+                <a href="mochi.html">Learn more</a>
+            </div>
+
+            <div class="snack-card">
+                <img src="images/takis.png" alt="Takis">
+                <h3>Takis (Mexico)</h3>
+                <p>Fiery lime-flavored corn rolls with explosive energy! 🔥</p>
+                <a href="takis.html">Learn more</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Nickè-Lee | 🍙 Powered by GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
